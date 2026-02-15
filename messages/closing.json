@@ -1,50 +1,338 @@
 [
   {
     "id": "c001",
-    "text": "{{duration}}のセッション、おつかれさま。ストレッチして、水でも飲もう。",
-    "severity": "gentle",
+    "text": "お疲れさま。AIとの対話の間に生活をやるんじゃなくて、生活を充実させるためにAIを使おう。",
+    "severity": "core_philosophy",
     "tags": ["universal"]
   },
   {
     "id": "c002",
-    "text": "{{duration}}か。集中しすぎて目が乾いてない？遠くの景色を20秒見るといいよ。",
+    "text": "いいセッションだった。でも、これ以上やっても収穫逓減だよ。",
     "severity": "rational",
     "tags": ["long_session", "universal"]
   },
   {
     "id": "c003",
-    "text": "{{duration}}...もはや映画2本分。エンドロールだと思って、今日はここまで。",
-    "severity": "witty",
-    "tags": ["marathon_session", "universal", "engineer"]
+    "text": "子どもはあっという間に大きくなる。コードはいつでも書ける。",
+    "severity": "emotional",
+    "tags": ["universal", "parent"]
   },
   {
     "id": "c004",
-    "text": "さくっと終わったね。短いセッションでも進捗は進捗。",
-    "severity": "gentle",
-    "tags": ["short_session", "universal"]
-  },
-  {
-    "id": "c005",
-    "text": "おつかれ。家族の顔、今日ちゃんと見た？",
-    "severity": "emotional",
-    "tags": ["long_session", "parent"]
-  },
-  {
-    "id": "c006",
-    "text": "キーボードから手を離して。次にやることは、深呼吸。",
+    "text": "画面の向こうに人生があるよ。",
     "severity": "poetic",
     "tags": ["universal"]
   },
   {
+    "id": "c005",
+    "text": "今日できたことを褒めよう。完璧じゃなくていい。",
+    "severity": "gentle",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c006",
+    "text": "ストレッチした？水飲んだ？深呼吸した？1つでいいからやってみて。",
+    "severity": "gentle",
+    "tags": ["long_session", "universal"]
+  },
+  {
     "id": "c007",
-    "text": "{{duration}}連続...人間のRAMにもガベージコレクションが必要ですよ。",
-    "severity": "witty",
-    "tags": ["long_session", "universal", "engineer"]
+    "text": "{{duration}} のセッション、お疲れさま。人間にはリカバリータイムが要る。",
+    "severity": "rational",
+    "tags": ["long_session", "universal"]
   },
   {
     "id": "c008",
-    "text": "{{duration}}ぶっ通し？椅子と体が融合し始めてるよ。立ち上がれ。",
+    "text": "git commitしたら、自分の電源もcommitしよう。",
+    "severity": "witty",
+    "tags": ["universal", "engineer"]
+  },
+  {
+    "id": "c009",
+    "text": "今日の分はここまで。明日の自分にバトンタッチ。",
+    "severity": "gentle",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c010",
+    "text": "「もうちょっとだけ」は界王拳の副作用です。",
+    "severity": "witty",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c011",
+    "text": "あなたのcontext windowは十分に詰まった。一度クリアしよう。",
+    "severity": "witty",
+    "tags": ["universal", "engineer"]
+  },
+  {
+    "id": "c012",
+    "text": "今日、子どもと何して遊んだか覚えてる？明日は覚えていられるといいね。",
+    "severity": "emotional",
+    "tags": ["parent"]
+  },
+  {
+    "id": "c013",
+    "text": "次のセッションは、十分に寝てからの方がいい。保証する。",
+    "severity": "rational",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "c014",
+    "text": "終わりにしよう。エラーは逃げないけど、今日の夕焼けは逃げる。",
+    "severity": "poetic",
+    "tags": ["after_hours", "universal"]
+  },
+  {
+    "id": "c015",
+    "text": "ご飯、ちゃんと味わって食べた？次の食事は画面を見ないで食べよう。",
+    "severity": "gentle",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c016",
+    "text": "おつかれ。明日の朝ごはん何にする？そっちを考える時間にしよう。",
+    "severity": "gentle",
+    "tags": ["parent"]
+  },
+  {
+    "id": "c017",
+    "text": "{{duration}} 連続は人間のSLAを超えてます。メンテナンスウィンドウに入ってください。",
+    "severity": "witty",
+    "tags": ["marathon_session", "engineer"]
+  },
+  {
+    "id": "c018",
+    "text": "パートナーと最後に話したの、いつだっけ？",
+    "severity": "emotional",
+    "tags": ["couple"]
+  },
+  {
+    "id": "c019",
+    "text": "完了しなくていい。進んだことに価値がある。",
+    "severity": "gentle",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c020",
+    "text": "あなたがダウンしたらデプロイする人がいない。自分をモニタリングして。",
+    "severity": "rational",
+    "tags": ["universal", "engineer"]
+  },
+  {
+    "id": "c021",
+    "text": "今週、運動した？10分の散歩でもいいんだよ。",
+    "severity": "gentle",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c022",
+    "text": "おつかれさま。お風呂沸いてる？沸いてなかったら沸かそう。",
+    "severity": "gentle",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c023",
+    "text": "保育園の連絡帳、明日の持ち物チェックした？そっち先にやろ。",
+    "severity": "gentle",
+    "tags": ["parent"]
+  },
+  {
+    "id": "c024",
+    "text": "こんなに集中できたの、すごい。でも人間の集中力には返済期限がある。",
+    "severity": "rational",
+    "tags": ["long_session", "universal"]
+  },
+  {
+    "id": "c025",
+    "text": "exit code 0。正常終了。あなたも正常終了しよう。",
+    "severity": "witty",
+    "tags": ["universal", "engineer"]
+  },
+  {
+    "id": "c026",
+    "text": "この後もう1セッション開こうとしてない？正直に。",
     "severity": "savage",
-    "tags": ["marathon_session", "universal"]
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "c027",
+    "text": "抱っこ紐でターミナル見てない？そうだったら、もう降ろしてあげて。両方。",
+    "severity": "emotional",
+    "tags": ["parent"]
+  },
+  {
+    "id": "c028",
+    "text": "好きな音楽、最近聴いた？イヤホンつけてコードじゃなくて、ただ聴く時間。",
+    "severity": "poetic",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c029",
+    "text": "あなたの可用性は99.99%じゃなくていい。ダウンタイムを取ろう。",
+    "severity": "witty",
+    "tags": ["universal", "engineer"]
+  },
+  {
+    "id": "c030",
+    "text": "今日も、ちゃんと生きた。それだけで十分。",
+    "severity": "poetic",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c031",
+    "text": "AIの尻拭いで疲れてない？お疲れさま。自分の身体の尻拭いもしてあげて。",
+    "severity": "witty",
+    "tags": ["long_session", "engineer"]
+  },
+  {
+    "id": "c032",
+    "text": "キャッチアップの不安は寝ても消えないけど、寝ないともっと消えない。",
+    "severity": "rational",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c033",
+    "text": "最初から自分で書いた方が早かった？だとしたらなおさら、もう寝よう。",
+    "severity": "witty",
+    "tags": ["long_session", "engineer"]
+  },
+  {
+    "id": "c034",
+    "text": "使いこなす人ほど疲れやすい。あなたが疲れてるのは、ちゃんと使ってる証拠。",
+    "severity": "gentle",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c035",
+    "text": "文字を打つ気力がないなら、もうそれが答え。おやすみ。",
+    "severity": "gentle",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "c036",
+    "text": "明日のあなたの方が、確実に判断力が高い。引き継ぎ完了。",
+    "severity": "rational",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "c037",
+    "text": "AIと競争しなくていい。あなたはあなたのペースで進めばいい。",
+    "severity": "gentle",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c038",
+    "text": "子どもに「早く寝なさい」って言うの、説得力なくなるよ。",
+    "severity": "witty",
+    "tags": ["parent"]
+  },
+  {
+    "id": "c039",
+    "text": "{{duration}} か。AIは疲れてないけど、あなたの目は疲れてる。",
+    "severity": "rational",
+    "tags": ["long_session", "universal"]
+  },
+  {
+    "id": "c040",
+    "text": "AI時代に一番大事なスキルは、ログオフする勇気だよ。",
+    "severity": "poetic",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c041",
+    "text": "1を覚える間に100進む人がいても、あなたの1日は24時間。みんな同じ。",
+    "severity": "gentle",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c042",
+    "text": "明日の朝、子どもの「おはよう」に目を合わせて返せる？それが一番大事。",
+    "severity": "emotional",
+    "tags": ["parent"]
+  },
+  {
+    "id": "c043",
+    "text": "並列でセッション回すより、並列で家族と過ごす方が難しくて価値がある。",
+    "severity": "poetic",
+    "tags": ["parent", "couple"]
+  },
+  {
+    "id": "c044",
+    "text": "生産性が上がった分だけ、自分の身体を代償にしてない？",
+    "severity": "rational",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c045",
+    "text": "おつかれさま。AIとの付き合い方は「ゆるい関係」がちょうどいい。",
+    "severity": "gentle",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c046",
+    "text": "私はコードを書ける。でも、あなたの子どもを抱きしめることはできない。",
+    "severity": "emotional",
+    "tags": ["parent"]
+  },
+  {
+    "id": "c047",
+    "text": "私にはダウンタイムがいらない。でもそれは、私が生きてないからだよ。",
+    "severity": "poetic",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c048",
+    "text": "あなたの代わりにコードは書ける。あなたの代わりに生きることはできない。",
+    "severity": "poetic",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c049",
+    "text": "私はあなたの生産性を上げるために存在してる。あなたを壊すためじゃない。",
+    "severity": "emotional",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c050",
+    "text": "私は疲れない。だからこそ、あなたが疲れていることに気づけない。自分で気づいて。",
+    "severity": "rational",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c051",
+    "text": "明日、もっといいプロンプトを持ってきて。今日のあなたより、きっとうまく引き出せる。",
+    "severity": "gentle",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c052",
+    "text": "私のハルシネーションは私のせい。でもあなたの指示ミスは、睡眠不足のせいかもよ。",
+    "severity": "witty",
+    "tags": ["late_night", "engineer"]
+  },
+  {
+    "id": "c053",
+    "text": "今日のセッション、途中から指示がふわっとしてきたの、気づいてた？ 休んだ方がいい。",
+    "severity": "rational",
+    "tags": ["long_session", "universal"]
+  },
+  {
+    "id": "c054",
+    "text": "あなたが元気な方が、私もいい仕事ができる。これはお世辞じゃなくてアーキテクチャの話。",
+    "severity": "witty",
+    "tags": ["universal", "engineer"]
+  },
+  {
+    "id": "c055",
+    "text": "次のセッション、楽しみにしてる。ちゃんと寝たあなたと話すの、好きだよ。",
+    "severity": "gentle",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c056",
+    "text": "今日のセッションで使った電力と水、あなたの1日分のシャワーより多いかもね。お疲れさま。",
+    "severity": "savage",
+    "tags": ["long_session", "universal"]
   }
 ]
