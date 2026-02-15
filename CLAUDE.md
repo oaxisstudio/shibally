@@ -1,6 +1,6 @@
 # shibally
 
-Claude Code用のデジタル健康管理hooks。設定した時間外にセッションを始めると確認メッセージを表示し、セッション終了時には心身の健康を思い出させるメッセージを表示する。
+Claude Code用のデジタル健康管理hooks。設定した時間外にセッションを始めると確認メッセージを表示し、Claudeの応答完了ごとに心身の健康を思い出させるメッセージを表示する。
 
 ## コンセプト
 
@@ -14,12 +14,12 @@ shibally（縛り + ally）は、適度に縛ることでユーザーの生活�
 | Hook           | タイミング       | 役割                                    |
 | -------------- | ---------------- | --------------------------------------- |
 | `SessionStart` | セッション開始時 | 時間外ならnudgeメッセージをstderrに表示 |
-| `Stop`         | セッション終了時 | closingメッセージをstderrに表示         |
+| `Stop`         | 応答完了ごと     | closingメッセージをstderrに表示         |
 
 ### 設計原則
 
-- **ブロックしない**: メッセージ表示時はexit code 2（stderrをユーザーに表示）、それ以外はexit code 0。SessionStartはexit 2でもブロック不可なので安全。Stopはstop_hook_activeフラグで再実行時スキップ
-- **セッション時間管理**: SessionStartでtmpfileにタイムスタンプ保存 → Stopで差分計算
+- **ブロックしない**: メッセージ表示時はexit code 2（stderrをユーザーに表示）、それ以外はexit code 0。SessionStartはexit 2でもブロック不可なので安全。Stopはstop_hook_activeフラグで再実行時スキップ（exit 2による再発火防止）
+- **セッション時間管理**: SessionStartでtmpfileにタイムスタンプ保存 → 初回Stop発火で差分計算（tmpfileは初回で削除される）
 - **属性別メッセージ**: config.yamlのpersona設定に基づきメッセージをフィルタ
 - **日本語のみ**: 初期バージョンは日本語メッセージのみ対応
 

@@ -5,7 +5,7 @@
 ```
 messages/
 ├── nudge.json     # SessionStart時（時間外にセッション開始した場合）
-└── closing.json   # Stop時（セッション終了時）
+└── closing.json   # Stop時（Claudeの応答完了ごと）
 ```
 
 ## JSONスキーマ

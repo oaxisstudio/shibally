@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Stop hook: セッション終了時にclosingメッセージを表示する。
+"""Stop hook: Claudeの応答完了ごとにclosingメッセージを表示する。
+
+Stop hookはセッション中にClaude が応答を返すたびに発火する（セッション終了時だけではない）。
 
 - stdinからClaude CodeのHook JSONを受け取る
 - /tmp/shibally_{session_id}.json からセッション開始時刻を読み取り、経過時間を計算
 - stderrにclosingメッセージを出力、exit 2で表示
-- stop_hook_activeフラグで再実行時はスキップ（無限ループ防止）
+- stop_hook_activeフラグで再実行時はスキップ（exit 2による再発火防止）
 - フィードバック収集（設定に応じて）
 """
 
