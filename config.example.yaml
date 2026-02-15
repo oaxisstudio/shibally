@@ -1,0 +1,47 @@
+# ~/.shibally/config.yaml
+# shiballyの設定ファイル
+
+# ─── 稼働時間設定 ───
+schedule:
+  # 稼働曜日（この曜日の稼働時間内はメッセージを出さない）
+  workdays: ["mon", "tue", "wed", "thu", "fri"]
+
+  # 通常の稼働時間
+  work_hours:
+    start: "09:00"
+    end: "17:00"
+
+  # 深夜帯（より強いメッセージを出す）
+  emergency_hours:
+    start: "23:00"
+    end: "05:00"
+
+# ─── 属性設定（メッセージのパーソナライズ用） ───
+persona:
+  # タイプ: parent | single | couple | student
+  type: "parent"
+
+  # 毒舌度: low | medium | high
+  humor_level: "medium"
+
+# ─── 表示設定 ───
+display:
+  # 休日もnudgeを表示する
+  nudge_on_weekend: true
+
+  # 毎セッション終了時にclosingメッセージを表示する
+  closing_always: true
+
+  # 1日の最大表示回数（うざくならないよう）
+  max_messages_per_day: 5
+
+  # 同一セッション内の最小表示間隔（分）
+  cooldown_minutes: 30
+
+# ─── フィードバック設定 ───
+feedback:
+  # メッセージへのフィードバックを収集する
+  enabled: true
+
+  # FB頻度: every | every_3rd | weekly
+  ask_frequency: "every_3rd"
