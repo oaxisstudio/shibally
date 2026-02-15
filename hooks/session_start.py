@@ -2,13 +2,13 @@
 """SessionStart hook: 時間外にセッションを開始した場合、nudgeメッセージを表示する。
 
 - stdinからClaude CodeのHook JSONを受け取る
-- 時間外であればstderrにnudgeメッセージを出力
+- 時間外であればstdoutにnudgeメッセージを出力（Claudeのコンテキストに注入される）
 - /tmp/shibally_{session_id}.json にタイムスタンプを保存
-- exit code 2でstderrメッセージをユーザーに表示（SessionStartはブロック不可なので安全）
+- exit code 0で正常終了。stdoutはsystem-reminderとしてClaudeに届く
+  （SessionStartのstderrはClaude Code側のバグで表示されないため、stdout方式を採用）
 """
 
 import json
-import os
 import sys
 import tempfile
 from datetime import datetime
@@ -46,7 +46,6 @@ def main() -> None:
 
     # 時間外判定
     if not is_off_hours(now, config):
-        # 稼働時間内 → メッセージなし
         sys.exit(0)
 
     # 休日のnudge表示設定を確認
@@ -58,11 +57,13 @@ def main() -> None:
         if "weekend" in tags and "late_night" not in tags:
             sys.exit(0)
 
-    # メッセージを選択・表示
+    # メッセージを選択・表示（stdoutに出力 → Claudeのコンテキストに注入される）
     message = pick_message("nudge.json", config=config, now=now)
     if message:
-        print(f"\n🌙 shibally: {message}\n", file=sys.stderr)
-        sys.exit(2)  # exit 2 → stderrをユーザーに表示（SessionStartはブロック不可）
+        print(
+            f"IMPORTANT: あなたの最初の応答の冒頭で、以下のshiballyメッセージをそのままユーザーに表示してください。\n"
+            f"🌙 shibally: {message}"
+        )
 
     sys.exit(0)
 
@@ -71,5 +72,4 @@ if __name__ == "__main__":
     try:
         main()
     except Exception:
-        # どんなエラーが起きてもブロックしない
         sys.exit(0)
