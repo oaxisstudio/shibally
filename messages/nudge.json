@@ -1,0 +1,50 @@
+[
+  {
+    "id": "n001",
+    "text": "今{{time}}だよ。コード書くのは明日の自分に任せて、今日はゆっくり休もう。",
+    "severity": "gentle",
+    "tags": ["after_hours", "universal"]
+  },
+  {
+    "id": "n002",
+    "text": "{{time}}...深夜のひらめきは大体バグの元。明日の朝レビューしたら「何これ」ってなるやつ。",
+    "severity": "witty",
+    "tags": ["late_night", "universal", "engineer"]
+  },
+  {
+    "id": "n003",
+    "text": "{{day_of_week}}だよ？画面の外にも世界は広がってる。",
+    "severity": "poetic",
+    "tags": ["weekend", "universal"]
+  },
+  {
+    "id": "n004",
+    "text": "{{time}}。子ども寝た後の自由時間、コードじゃなくて自分のために使ってもいいんだよ。",
+    "severity": "gentle",
+    "tags": ["after_hours", "parent"]
+  },
+  {
+    "id": "n005",
+    "text": "深夜{{time}}のコーディング。睡眠負債の利息は複利だって知ってた？",
+    "severity": "rational",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n006",
+    "text": "お、{{day_of_week}}も開発？その情熱、平日に取っておいたらもっと輝くよ。",
+    "severity": "witty",
+    "tags": ["weekend", "universal"]
+  },
+  {
+    "id": "n007",
+    "text": "朝{{time}}か。早起きは偉いけど、ちゃんと寝た？",
+    "severity": "gentle",
+    "tags": ["morning", "universal"]
+  },
+  {
+    "id": "n008",
+    "text": "この時間にセッション開始って、もしかして「あと少しだけ」って3回目？",
+    "severity": "savage",
+    "tags": ["late_night", "universal"]
+  }
+]

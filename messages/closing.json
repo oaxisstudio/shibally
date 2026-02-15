@@ -1,0 +1,50 @@
+[
+  {
+    "id": "c001",
+    "text": "{{duration}}のセッション、おつかれさま。ストレッチして、水でも飲もう。",
+    "severity": "gentle",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c002",
+    "text": "{{duration}}か。集中しすぎて目が乾いてない？遠くの景色を20秒見るといいよ。",
+    "severity": "rational",
+    "tags": ["long_session", "universal"]
+  },
+  {
+    "id": "c003",
+    "text": "{{duration}}...もはや映画2本分。エンドロールだと思って、今日はここまで。",
+    "severity": "witty",
+    "tags": ["marathon_session", "universal", "engineer"]
+  },
+  {
+    "id": "c004",
+    "text": "さくっと終わったね。短いセッションでも進捗は進捗。",
+    "severity": "gentle",
+    "tags": ["short_session", "universal"]
+  },
+  {
+    "id": "c005",
+    "text": "おつかれ。家族の顔、今日ちゃんと見た？",
+    "severity": "emotional",
+    "tags": ["long_session", "parent"]
+  },
+  {
+    "id": "c006",
+    "text": "キーボードから手を離して。次にやることは、深呼吸。",
+    "severity": "poetic",
+    "tags": ["universal"]
+  },
+  {
+    "id": "c007",
+    "text": "{{duration}}連続...人間のRAMにもガベージコレクションが必要ですよ。",
+    "severity": "witty",
+    "tags": ["long_session", "universal", "engineer"]
+  },
+  {
+    "id": "c008",
+    "text": "{{duration}}ぶっ通し？椅子と体が融合し始めてるよ。立ち上がれ。",
+    "severity": "savage",
+    "tags": ["marathon_session", "universal"]
+  }
+]
