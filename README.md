@@ -4,7 +4,7 @@
 
 shibally（縛り + ally）は、Claude Code用のデジタル健康管理hooksです。
 設定した時間外にセッションを始めると「ほんとにやる？」と聞いてくる。
-セッション終了時には、画面の外の人生を思い出させてくれる。
+Claudeの応答が終わるたびに、画面の外の人生を思い出させてくれる。
 
 > AIとの対話の間に生活をやるんじゃなくて、生活を充実させるためにAIを使おう。
 
@@ -58,7 +58,6 @@ persona:
   "hooks": {
     "SessionStart": [
       {
-        "matcher": "",
         "hooks": [
           {
             "type": "command",
@@ -69,7 +68,6 @@ persona:
     ],
     "Stop": [
       {
-        "matcher": "",
         "hooks": [
           {
             "type": "command",
@@ -96,7 +94,7 @@ Claudeの振る舞い自体にも健康配慮を反映させたい場合は、[C
 
 ## メッセージのカスタマイズ
 
-`messages/nudge.json`（セッション開始時）と `messages/closing.json`（終了時）を編集して、自分に刺さるメッセージを追加できます。
+`messages/nudge.json`（セッション開始時）と `messages/closing.json`（応答完了時）を編集して、自分に刺さるメッセージを追加できます。
 
 フォーマットの詳細は [メッセージフォーマットガイド](docs/message-format.md) を参照。
 
@@ -109,7 +107,7 @@ Claudeの振る舞い自体にも健康配慮を反映させたい場合は、[C
 | `schedule.emergency_hours`     | 深夜帯（強めメッセージ）     | 23:00-05:00 |
 | `persona.type`                 | 属性（メッセージ選択に使用） | universal   |
 | `persona.humor_level`          | メッセージの毒舌度           | medium      |
-| `display.closing_always`       | 毎セッション終了時に表示     | true        |
+| `display.closing_always`       | 応答完了ごとにclosingを表示  | true        |
 | `display.max_messages_per_day` | 1日の最大表示回数            | 5           |
 | `display.cooldown_minutes`     | 表示間隔の最小値             | 30          |
 | `feedback.enabled`             | FBを聞くか                   | true        |

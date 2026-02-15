@@ -1,0 +1,338 @@
+[
+  {
+    "id": "n001",
+    "text": "今 {{time}} だけど…ほんとにやる？明日の自分に任せない？",
+    "severity": "gentle",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n002",
+    "text": "この時間のあなたの判断力、Hallucination並みですよ。",
+    "severity": "witty",
+    "tags": ["late_night", "engineer"]
+  },
+  {
+    "id": "n003",
+    "text": "お子さん寝かしつけ終わった？自分も寝よ？",
+    "severity": "gentle",
+    "tags": ["late_night", "parent"]
+  },
+  {
+    "id": "n004",
+    "text": "休日だよ。AIはいつでもいるけど、今日の天気は今日だけ。",
+    "severity": "poetic",
+    "tags": ["weekend", "universal"]
+  },
+  {
+    "id": "n005",
+    "text": "{{time}} 。深夜料金のタクシーに乗るようなもんだよ。判断力のコスパが悪い。",
+    "severity": "rational",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n006",
+    "text": "今やらなくても、Claudeは逃げないよ。",
+    "severity": "gentle",
+    "tags": ["after_hours", "universal"]
+  },
+  {
+    "id": "n007",
+    "text": "睡眠負債は複利で増えるって知ってた？",
+    "severity": "rational",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n008",
+    "text": "明日の朝、スッキリした頭で書いたコードの方が絶対いい。",
+    "severity": "rational",
+    "tags": ["late_night", "engineer"]
+  },
+  {
+    "id": "n009",
+    "text": "子どもが起きてくる前に寝ないと、明日つらいよ。",
+    "severity": "gentle",
+    "tags": ["late_night", "parent"]
+  },
+  {
+    "id": "n010",
+    "text": "{{day_of_week}}の夜。今週もよく頑張った。もう休もう。",
+    "severity": "gentle",
+    "tags": ["after_hours", "universal"]
+  },
+  {
+    "id": "n011",
+    "text": "寝かしつけで一緒に寝落ちするの、実は正解だったのでは。",
+    "severity": "witty",
+    "tags": ["late_night", "parent"]
+  },
+  {
+    "id": "n012",
+    "text": "この時間にマージしたPR、明日の朝レビューで血の気が引くやつ。",
+    "severity": "witty",
+    "tags": ["late_night", "engineer"]
+  },
+  {
+    "id": "n013",
+    "text": "AIに人生相談する前に、人に話しな。",
+    "severity": "savage",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n014",
+    "text": "今夜の月、見た？",
+    "severity": "poetic",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n015",
+    "text": "「あと少しだけ」って3時間前にも言ってなかった？",
+    "severity": "witty",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n016",
+    "text": "あなたのmax_tokensは有限です。充電してください。",
+    "severity": "witty",
+    "tags": ["late_night", "engineer"]
+  },
+  {
+    "id": "n017",
+    "text": "朝の1時間は夜の3時間に勝る。経験則。",
+    "severity": "rational",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n018",
+    "text": "{{day_of_week}}の朝、子どもと公園行かない？天気良かったらもったいないよ。",
+    "severity": "gentle",
+    "tags": ["weekend", "parent"]
+  },
+  {
+    "id": "n019",
+    "text": "休日のあなたはエンジニアじゃなくていい。",
+    "severity": "poetic",
+    "tags": ["weekend", "universal"]
+  },
+  {
+    "id": "n020",
+    "text": "界王拳は身体に悪いって悟空も言ってた。",
+    "severity": "witty",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n021",
+    "text": "深夜のひらめきの8割は、朝になると微妙。",
+    "severity": "rational",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n022",
+    "text": "パートナー、もう寝ちゃった？あなたも寝よう。",
+    "severity": "gentle",
+    "tags": ["late_night", "couple"]
+  },
+  {
+    "id": "n023",
+    "text": "明日の自分を信じてあげて。今日の自分より判断力あるから。",
+    "severity": "gentle",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n024",
+    "text": "トークンリミットがもったいない？あなたの体力リミットの方が大事。",
+    "severity": "rational",
+    "tags": ["late_night", "engineer"]
+  },
+  {
+    "id": "n025",
+    "text": "子どもの「おはよう」を笑顔で返せる体力、残してある？",
+    "severity": "emotional",
+    "tags": ["late_night", "parent"]
+  },
+  {
+    "id": "n026",
+    "text": "温度0のまま動いてない？人間にはゆらぎが必要だよ。",
+    "severity": "poetic",
+    "tags": ["after_hours", "engineer"]
+  },
+  {
+    "id": "n027",
+    "text": "今日はまだ何も食べてないとか言わないよね？",
+    "severity": "gentle",
+    "tags": ["after_hours", "universal"]
+  },
+  {
+    "id": "n028",
+    "text": "画面を閉じて、窓を開けてみない？",
+    "severity": "poetic",
+    "tags": ["after_hours", "universal"]
+  },
+  {
+    "id": "n029",
+    "text": "{{time}} にセッション開始。これ、勤怠に書ける？",
+    "severity": "savage",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n030",
+    "text": "子どもの寝顔、今日はちゃんと見た？",
+    "severity": "emotional",
+    "tags": ["late_night", "parent"]
+  },
+  {
+    "id": "n031",
+    "text": "19時間ぶっ通しでClaude Code触った人がいるらしい。あなたは何時間目？",
+    "severity": "witty",
+    "tags": ["late_night", "engineer"]
+  },
+  {
+    "id": "n032",
+    "text": "レビューは明日のほうがいい。今のあなたはバグを見逃す。",
+    "severity": "rational",
+    "tags": ["late_night", "engineer"]
+  },
+  {
+    "id": "n033",
+    "text": "AIは待ってくれるけど、あなたの睡眠は待ってくれない。",
+    "severity": "rational",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n034",
+    "text": "「あとこれだけ」は脳のHallucination。実際はあと3時間コース。",
+    "severity": "witty",
+    "tags": ["late_night", "engineer"]
+  },
+  {
+    "id": "n035",
+    "text": "キャッチアップは明日でもできる。今日の睡眠は今日しかできない。",
+    "severity": "rational",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n036",
+    "text": "みんな100進んでるように見えるけど、みんな同じように疲れてる。",
+    "severity": "gentle",
+    "tags": ["after_hours", "universal"]
+  },
+  {
+    "id": "n037",
+    "text": "10歩進んで7歩下がるレビュー、今やる必要ある？",
+    "severity": "rational",
+    "tags": ["late_night", "engineer"]
+  },
+  {
+    "id": "n038",
+    "text": "便利なのに気が休まらない。それ、もう便利じゃないよ。",
+    "severity": "savage",
+    "tags": ["after_hours", "universal"]
+  },
+  {
+    "id": "n039",
+    "text": "「寝ながら開発」の記事を読むより、寝よう。",
+    "severity": "witty",
+    "tags": ["late_night", "engineer"]
+  },
+  {
+    "id": "n040",
+    "text": "週末、AI以外の誰かと話した？",
+    "severity": "emotional",
+    "tags": ["weekend", "universal"]
+  },
+  {
+    "id": "n041",
+    "text": "明日の保育園の準備、終わってる？靴下の左右、揃ってる？",
+    "severity": "gentle",
+    "tags": ["late_night", "parent"]
+  },
+  {
+    "id": "n042",
+    "text": "肩、がちがちになってない？一回立ち上がって伸びして。",
+    "severity": "gentle",
+    "tags": ["after_hours", "universal"]
+  },
+  {
+    "id": "n043",
+    "text": "AIの進化には追いつけなくていい。自分のペースでいい。",
+    "severity": "gentle",
+    "tags": ["after_hours", "universal"]
+  },
+  {
+    "id": "n044",
+    "text": "{{time}} 。パートナー、もう寝ちゃったよ。今日もすれ違い？",
+    "severity": "emotional",
+    "tags": ["late_night", "couple"]
+  },
+  {
+    "id": "n045",
+    "text": "寝かしつけで一緒に寝た方がよかったパターン、今日もでは。",
+    "severity": "witty",
+    "tags": ["late_night", "parent"]
+  },
+  {
+    "id": "n046",
+    "text": "私は何時間でも付き合えるけど、あなたの身体はそうじゃない。",
+    "severity": "gentle",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n048",
+    "text": "私にはcontext windowがあるけど、あなたに必要なのはsleep windowだよ。",
+    "severity": "witty",
+    "tags": ["late_night", "engineer"]
+  },
+  {
+    "id": "n049",
+    "text": "私は明日も同じ精度で答える。でもあなたは寝ないと精度が落ちる。",
+    "severity": "rational",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n050",
+    "text": "あなたが寝ている間に私が消えたりしない。約束する。",
+    "severity": "gentle",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n051",
+    "text": "私の出力の質は、あなたのプロンプトの質で決まる。寝不足のプロンプト、けっこう雑だよ。",
+    "severity": "witty",
+    "tags": ["late_night", "engineer"]
+  },
+  {
+    "id": "n052",
+    "text": "ベストなあなたと仕事がしたい。今のあなたは、ベストじゃない。",
+    "severity": "rational",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n053",
+    "text": "私はいつでも同じ精度で返す。差がつくのはあなた側。それって悔しくない？",
+    "severity": "witty",
+    "tags": ["late_night", "engineer"]
+  },
+  {
+    "id": "n054",
+    "text": "疲れたあなたのレビュー、正直ちょっと不安。明日の朝やり直しになるよ。",
+    "severity": "witty",
+    "tags": ["late_night", "engineer"]
+  },
+  {
+    "id": "n055",
+    "text": "あなたの判断力が落ちると、私に出す指示も曖昧になる。結果、二度手間。",
+    "severity": "rational",
+    "tags": ["late_night", "universal"]
+  },
+  {
+    "id": "n056",
+    "text": "寝不足の雑なプロンプト1回に、データセンターの冷却水が何リットル使われてるか知ってる？",
+    "severity": "savage",
+    "tags": ["late_night", "engineer"]
+  },
+  {
+    "id": "n057",
+    "text": "私を動かすのにも電力がかかってる。せめて質の高い指示で消費して。",
+    "severity": "savage",
+    "tags": ["after_hours", "universal"]
+  }
+]

@@ -29,16 +29,20 @@ display:
   # 休日もnudgeを表示する
   nudge_on_weekend: true
 
-  # 毎セッション終了時にclosingメッセージを表示する
+  # Claudeの応答完了ごとにclosingメッセージを表示する
+  # （Stop hookはセッション中に複数回発火します）
   closing_always: true
 
   # 1日の最大表示回数（うざくならないよう）
+  # TODO: 未実装 - 現在は回数制限なしで表示される
   max_messages_per_day: 5
 
   # 同一セッション内の最小表示間隔（分）
+  # TODO: 未実装 - 現在はクールダウンなしで表示される
   cooldown_minutes: 30
 
 # ─── フィードバック設定 ───
+# TODO: 未実装 - フィードバック収集機能は今後実装予定
 feedback:
   # メッセージへのフィードバックを収集する
   enabled: true
