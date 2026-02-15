@@ -3,9 +3,9 @@
 
 - stdinからClaude CodeのHook JSONを受け取る
 - /tmp/shibally_{session_id}.json からセッション開始時刻を読み取り、経過時間を計算
-- stderrにclosingメッセージを出力
+- stderrにclosingメッセージを出力、exit 2で表示
+- stop_hook_activeフラグで再実行時はスキップ（無限ループ防止）
 - フィードバック収集（設定に応じて）
-- exit codeは常に0
 """
 
 import json
@@ -72,11 +72,16 @@ def main() -> None:
 
     # stdinからHook入力を読み取る
     session_id = "unknown"
+    hook_input = {}
     try:
         hook_input = json.load(sys.stdin)
         session_id = hook_input.get("session_id", session_id)
     except Exception:
         pass
+
+    # stop_hook_activeなら再実行 → スキップして終了させる
+    if hook_input.get("stop_hook_active"):
+        sys.exit(0)
 
     # closing表示設定を確認
     display = config.get("display", {})
@@ -107,6 +112,7 @@ def main() -> None:
     )
     if message:
         print(f"\n✨ shibally: {message}\n", file=sys.stderr)
+        sys.exit(2)  # exit 2 → stderrをユーザーに表示
 
     sys.exit(0)
 

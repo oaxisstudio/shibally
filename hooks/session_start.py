@@ -4,7 +4,7 @@
 - stdinからClaude CodeのHook JSONを受け取る
 - 時間外であればstderrにnudgeメッセージを出力
 - /tmp/shibally_{session_id}.json にタイムスタンプを保存
-- exit codeは常に0（セッションをブロックしない）
+- exit code 2でstderrメッセージをユーザーに表示（SessionStartはブロック不可なので安全）
 """
 
 import json
@@ -62,6 +62,7 @@ def main() -> None:
     message = pick_message("nudge.json", config=config, now=now)
     if message:
         print(f"\n🌙 shibally: {message}\n", file=sys.stderr)
+        sys.exit(2)  # exit 2 → stderrをユーザーに表示（SessionStartはブロック不可）
 
     sys.exit(0)
 

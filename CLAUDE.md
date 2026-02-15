@@ -18,7 +18,7 @@ shibally（縛り + ally）は、適度に縛ることでユーザーの生活�
 
 ### 設計原則
 
-- **ブロックしない**: exit code 0のみ使用。stderrへのメッセージ表示だけで、セッションを妨げない
+- **ブロックしない**: メッセージ表示時はexit code 2（stderrをユーザーに表示）、それ以外はexit code 0。SessionStartはexit 2でもブロック不可なので安全。Stopはstop_hook_activeフラグで再実行時スキップ
 - **セッション時間管理**: SessionStartでtmpfileにタイムスタンプ保存 → Stopで差分計算
 - **属性別メッセージ**: config.yamlのpersona設定に基づきメッセージをフィルタ
 - **日本語のみ**: 初期バージョンは日本語メッセージのみ対応

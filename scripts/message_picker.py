@@ -338,6 +338,10 @@ def pick_message(
     time_tags = get_time_tags(now, config)
     filtered = filter_messages(messages, time_tags, config, session_tags)
 
+    # duration_minutesがNoneのとき、{{duration}}を含むメッセージを除外
+    if duration_minutes is None:
+        filtered = [m for m in filtered if "{{duration}}" not in m.get("text", "")]
+
     if not filtered:
         # フィルタ結果が空の場合、universalメッセージからフォールバック
         filtered = [
@@ -349,6 +353,8 @@ def pick_message(
                 and m.get("severity") == "savage"
             )
         ]
+        if duration_minutes is None:
+            filtered = [m for m in filtered if "{{duration}}" not in m.get("text", "")]
 
     if not filtered:
         return None
